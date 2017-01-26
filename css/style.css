@@ -1,0 +1,221 @@
+body {
+	min-width: 1200px;
+
+	font-size: 15px;
+	line-height: 2;
+	font-weight: 300;
+	font-family: "Roboto Slab", "Times New Roman", serif;
+
+	background-color: #ffffff;
+}
+
+/*
+	Шапка
+*/
+.main-header {
+	background-color: #edeff1;
+}
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	padding-top: 45px;
+	padding-bottom: 47px;
+	margin-right: 30px;
+
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-align: center;
+
+	color: #31353e;
+}
+
+.logo span {
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: 400;
+
+	color: #dd4b2b;
+}
+
+.main-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	font-size: 0;
+}
+
+.menu-item {
+	display: inline-block;
+	margin-right: 40px;
+	padding-top: 68px;
+
+	vertical-align: baseline;
+}
+
+.menu-item:last-of-type {
+	margin-right: 0;
+}
+
+.menu-item a {
+	font-size: 18px;
+	line-height: 1.3;
+	font-weight: 400;
+	text-decoration: none;
+
+	color: #31353e;
+}
+
+.menu-item.active {
+	padding: 15px 30px;
+	margin-right: 10px;
+	margin-left: -30px;
+
+	background-color: #dd4b2b;
+	border-radius: 25px;
+}
+
+.menu-item.active a {
+	color: #edeff1;
+}
+
+.menu-item a:hover {
+	color: #dd4b2b;
+	transition: color 0.1s ease;
+}
+
+.menu-item.active a:hover {
+	color: #edeff1;
+}
+
+
+/*
+	Основное содержимое
+*/
+
+main {
+	padding-top: 485px;
+	padding-bottom: 135px;
+
+	background: #000000 url("../img/panakeia-photo.jpg") no-repeat;
+	background-size: 100% 100%;
+	color: #ffffff;
+}
+
+main .container {
+	flex-direction: column;
+}
+
+.slogan {
+	margin-bottom: 130px;
+
+	text-align: center;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+
+	color: #ffffff;
+}
+
+.slogan h1 {
+	margin: 0;
+
+	font-size: 72px;
+	line-height: 1.2;
+	font-weight: 300;
+}
+
+.slogan small {
+	font-size: 30px;
+	line-height: 1.6;
+	font-weight: 700;
+}
+
+.food {
+	display: flex;
+	margin-bottom: 80px;
+
+	text-align: center;
+}
+
+.food div {
+	position: relative;
+
+	width: 370px;
+	margin-right: 30px;
+	padding-top: 170px;
+}
+
+.food div::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	width: 134px;
+	height: 134px;
+	margin-left: -70px;
+
+	border-radius: 50%;
+	border: 7px solid #edeff1;
+}
+
+.food-1::before {
+	background-image: url("../img/food-1.png");
+}
+
+.food .food-2::before {
+	background-image: url("../img/food-2.png");
+}
+
+.food .food-3::before {
+	width: 133px;
+	height: 133px;
+
+	background-image: url("../img/food-3.png");
+}
+
+.food-name {
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.food-description {
+	font-size: 15px;
+	line-height: 2;
+	font-weight: 300;
+}
+
+.btn {
+	display: inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #ffffff;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 27px;
+}
+
+.read-more {
+	width: 210px;
+	margin: 0 auto;
+
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+
+	color: #612316;
+}
